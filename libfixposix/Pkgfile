@@ -1,0 +1,20 @@
+# Description: Steel Bank Common Lisp (binary)
+# URL: https://aur.archlinux.org/packages/libfixposix/
+# Maintainer: Slawomir Gonet, slawek at otwiera dot cz
+# Depends on: glibc autoreconf
+
+name=libfixposix
+version=0.3.0
+release=1
+source=(https://github.com/sionescu/libfixposix/archive/v$version.tar.gz)
+
+build ()
+{
+    cd $name-$version
+    mkdir $PKG/usr
+    autoreconf -i -f
+    ./configure --prefix=$PKG/usr
+    make
+    make install
+    rm -rf $PKG/usr/share/doc/
+}

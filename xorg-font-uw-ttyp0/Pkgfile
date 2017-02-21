@@ -1,0 +1,17 @@
+# Description: UW ttyp0 is a family of bitmap programmer's fonts in bdf format.
+# URL: http://people.mpi-inf.mpg.de/~uwe/misc/uw-ttyp0/
+# Maintainer: Slawomir Gonet, slawek at otwiera dot cz
+# Depends on: xorg-mkfontdir xorg-mkfontscale fontconfig
+
+name=xorg-font-uw-ttyp0
+version=1.3
+release=1
+source=(https://people.mpi-inf.mpg.de/~uwe/misc/uw-ttyp0/uw-ttyp0-$version.tar.gz)
+
+build() {
+    cd uw-ttyp0-$version
+
+    ./configure --prefix=$PKG/usr --pcfdir=$PKG/usr/share/fonts/X11/uw-ttyp0
+    make
+    make install
+}

@@ -1,0 +1,24 @@
+# Description: MIME-handling suite
+# URL: http://spruce.sourceforge.net/gmime
+# Maintainer: Sean Whitton, sean at silentflame dot com
+# Packager: Antonio SJ Musumeci, bile at landofbile dot com
+# Depends on: gpgme
+
+# Preparing this as a dependency for notmuch-0.6 so not latest version
+# of gmime
+
+name=gmime
+version=2.6.23
+release=1
+source=(http://ftp.gnome.org/pub/GNOME/sources/$name/${version%.*}/$name-$version.tar.xz)
+
+build()
+{
+    cd $name*
+    ./configure \
+        --prefix=/usr \
+        --disable-nls
+    make
+    make DESTDIR=$PKG install
+    rm -r $PKG/usr/share/
+}

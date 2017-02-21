@@ -1,0 +1,17 @@
+# Description: Notmuch - The mail indexer
+# URL:         http://notmuchmail.org/
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  xapian gmime talloc
+
+name=notmuch
+version=0.23
+release=1
+source=(http://notmuchmail.org/releases/$name-$version.tar.gz)
+
+build()
+{
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG install
+}

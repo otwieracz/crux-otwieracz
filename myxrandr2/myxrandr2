@@ -1,0 +1,69 @@
+#!/bin/bash
+# Bash 4 required
+
+CONFIG=/etc/myxrandr2.conf
+XRANDR="xrandr"
+LOGGER="logger -t myxrandr2 "
+DEBUG=0
+RUNFILE=/tmp/myxrandr2
+DISPLAY=:0
+
+export DISPLAY
+
+
+[[ -f "${RUNFILE}" ]] && {
+    $LOGGER "already runnning"
+    exit 1
+}
+
+touch "${RUNFILE}"
+
+function begin {
+    $LOGGER "called. using ports: $USED_DPS"
+}
+
+function end {
+    $LOGGER end
+    rm "${RUNFILE}"
+    exit 0
+}
+
+function make_unused_dps {
+    used_dps=$(echo $@ | tr ' ' '\n')
+    unused_dps=$(echo $used_dps $dp_names | tr ' ' '\n' | sort | uniq -u)
+    [[ $DEBUG == 1 ]] && {
+        for i in ${unused_dps}
+        do
+            echo $i unused
+        done
+    }
+}
+
+function disable_unused {
+    make_unused_dps $USED_DPS
+    for display in ${unused_dps}
+    do
+        $LOGGER disabling output $display
+        $XRANDR --output $display --off
+    done
+}
+
+$LOGGER begin
+
+# Generate current state info
+declare -A dp
+declare dp_names
+raw_outputs=$(xrandr | sed -nE 's/^((\w|-|_)*)\s*(connected|disconnected).*/\1:\3/p')
+for output_line in ${raw_outputs}
+do
+    output_name=$(echo $output_line | awk -F':' '{ print $1 }')
+    output_state=$(echo $output_line | awk -F':' '{ if($2 == "connected") { print "1" } else { print "0" } }')
+    [[ $DEBUG == 1 ]] && echo "$output_name = $output_state"
+    [[ $output_state == 1 ]] && {
+	    dp["$output_name"]=$output_state
+    }
+    dp_names+="${output_name} "
+done
+
+source $CONFIG
+end

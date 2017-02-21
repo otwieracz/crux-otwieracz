@@ -1,0 +1,26 @@
+#!/bin/bash
+STATEFILE="/tmp/myxrandr2-action"
+
+if [[ $1 == "change" ]]
+then
+        echo -n CHANGED > $STATEFILE
+elif [[ $1 == "watch" ]]
+then
+	# execute one time
+	myxrandr2
+
+        while true
+        do
+                ACTION="$(test -e $STATEFILE && cat $STATEFILE)"
+                if [[ $ACTION == "CHANGED" ]]
+                then
+                        myxrandr2
+                fi
+
+		rm -f $STATEFILE
+                sleep 1s;
+        done
+else
+	echo "myxrandr2d.sh <change|watch>"
+fi
+

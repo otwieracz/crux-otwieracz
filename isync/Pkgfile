@@ -1,0 +1,19 @@
+# Description: mailbox synchronizer
+# URL:         http://isync.sourceforge.net/
+# Maintainer:  Michael Savage, mike at mikejsavage dot co dot uk
+# Depends on:  openssl cyrus-sasl
+
+name=isync
+version=1.2.0
+release=1
+source=(http://downloads.sourceforge.net/project/isync/isync/$version/isync-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr --mandir=/usr/man --disable-compat
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/doc
+}

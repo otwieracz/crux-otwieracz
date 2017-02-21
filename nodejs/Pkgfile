@@ -1,0 +1,18 @@
+# Description:  Event-driven I/O server-side JavaScript environment based on V8
+# URL:          http://nodejs.org/
+# Maintainer:   Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:
+
+name=nodejs
+_name=node
+version=6.9.5
+release=1
+source=(http://nodejs.org/dist/v${version}/$_name-v${version}.tar.gz)
+
+build() {
+    cd $_name-v${version}
+
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG install
+}

@@ -1,0 +1,15 @@
+# Description: Automatic xrandr interface
+# URL: None
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  xorg-xrandr eudev
+
+name=myxrandr2
+version=1.0.0
+release=1
+source=(myxrandr2 myxrandr2d 90-myxrandr2d.rules)
+
+build() {
+	install -D -m 755 $SRC/myxrandr2 $PKG/usr/bin/myxrandr2
+	install -D -m 755 $SRC/myxrandr2d $PKG/usr/bin/myxrandr2d
+	install -D -m 644 $SRC/90-myxrandr2d.rules $PKG/etc/udev/rules.d/90-myxrandr2d.rules
+}

@@ -1,0 +1,20 @@
+# Description: Fake keyboard/mouse input
+# URL:         http://www.semicomplete.com/projects/xdotool
+# Maintainer:  Aaron Ball, nullspoon at oper dot io
+# Depends on:  xorg-libxkbcommon
+
+name=xdotool
+version=3.20160805.1
+release=1
+source=(https://github.com/jordansissel/${name}/archive/v${version}.tar.gz)
+
+
+build() {
+  cd ${name}-${version}
+
+  make
+  make DESTDIR=$PKG PREFIX=/usr install
+}
+
+
+# vim: set ft=sh ts=2 et:

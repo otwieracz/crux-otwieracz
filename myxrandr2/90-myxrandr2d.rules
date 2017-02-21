@@ -1,0 +1,3 @@
+# watch for display changes
+SUBSYSTEM=="drm", ACTION=="change", RUN+="/usr/local/myxrandr2d change"
+

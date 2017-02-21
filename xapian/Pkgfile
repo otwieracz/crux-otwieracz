@@ -1,0 +1,17 @@
+# Description: Very fast Open Source Search Engine Library
+# URL:         http://xapian.org/
+# Maintainer:  Sean Whitton, sean at silentflame dot com
+
+name=xapian
+version=1.4.3
+release=1
+source=(http://oligarchy.co.uk/$name/$version/$name-core-$version.tar.xz)
+
+build()
+{
+    cd $name-core-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG install
+    rm -rf $PKG/usr/share/doc
+}
