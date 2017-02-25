@@ -1,0 +1,33 @@
+# Description: Language and environment for statistical computing and graphics
+# URL:         https://www.r-project.org
+# Maintainer:  manu, maraku at gmx dot com
+# Depends on:  lapack xorg-server
+
+name=R
+version=3.3.2
+release=1
+source=("https://cloud.r-project.org/src/base/R-3/R-${version}.tar.gz" "zlib.patch")
+
+build() {
+	cd "${name}-${version}"
+
+	patch -p1 < "${SRC}/zlib.patch"
+
+	./configure \
+		--enable-R-shlib \
+		--prefix=/usr    \
+		--with-lapack    \
+		--with-blas
+
+	make
+	make install DESTDIR="${PKG}"
+
+	# cleanup
+	find "${PKG}" -name 'AUTHORS' -delete
+	find "${PKG}" -name 'COPYING' -delete
+	find "${PKG}" -name 'INSTALL' -delete
+	find "${PKG}" -name 'NEWS*'   -delete
+	find "${PKG}" -name 'README'  -delete
+	find "${PKG}" -name 'THANKS'  -delete
+	rm "${PKG}/usr/lib64/R/library/mgcv/CITATION"
+}

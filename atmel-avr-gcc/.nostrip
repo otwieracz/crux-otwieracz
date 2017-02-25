@@ -1,0 +1,7 @@
+/usr/avr/avr/lib/.*/.*\.a/
+/usr/avr/avr/lib/.*/.*\.so/
+/usr/avr/avr/lib/.*/.*\.o/
+/usr/avr/lib/.*/.*\.a/
+/usr/avr/lib/.*/.*\.so/
+/usr/avr/lib/.*/.*\.o/
+

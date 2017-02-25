@@ -1,0 +1,16 @@
+# Description: C-based implementation of the GDI+ API 
+# URL: http://www.mono-project.com
+# Maintainer: Slawomir Gonet, slawek at otwiera dot cz
+# Depends on: cairo
+
+name=libgdiplus
+version=4.2
+release=1
+source=(https://github.com/mono/$name/archive/$version.tar.gz)
+build() {
+	cd $name-$version
+	
+	./autogen.sh --prefix=/usr
+	make
+	make DESTDIR=$PKG MANDIR=/usr/man install
+}

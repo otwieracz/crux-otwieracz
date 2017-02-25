@@ -1,0 +1,20 @@
+# Description: Steel Bank Common Lisp (binary)
+# URL: http://www.atmel.com
+# Maintainer: Slawomir Gonet, slawek at otwiera dot cz
+# Depends on: 
+
+name=atmel-avr-gcc
+version=3.5.4.1709
+release=2
+source=(http://www.atmel.com/images/avr8-gnu-toolchain-$version-linux.any.x86_64.tar.gz)
+
+build ()
+{
+    mkdir -p $PKG/usr/avr
+    cp -r avr8-gnu-toolchain-linux_x86_64/* $PKG/usr/avr
+
+    # Cleanup
+    rm -rf $PKG/usr/avr/share/doc
+    rm -rf $PKG/usr/avr/doc
+    find $PKG -iname "*README*" -delete
+}

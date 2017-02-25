@@ -1,0 +1,21 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/baud_test
+-rwxr-xr-x	root/root	usr/bin/bitbang
+-rwxr-xr-x	root/root	usr/bin/bitbang2
+-rwxr-xr-x	root/root	usr/bin/bitbang_cbus
+-rwxr-xr-x	root/root	usr/bin/bitbang_ft2232
+-rwxr-xr-x	root/root	usr/bin/find_all
+-rwxr-xr-x	root/root	usr/bin/libftdi-config
+-rwxr-xr-x	root/root	usr/bin/serial_test
+-rwxr-xr-x	root/root	usr/bin/simple
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/ftdi.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libftdi.a
+-rwxr-xr-x	root/root	usr/lib/libftdi.la
+lrwxrwxrwx	root/root	usr/lib/libftdi.so -> libftdi.so.1.20.0
+lrwxrwxrwx	root/root	usr/lib/libftdi.so.1 -> libftdi.so.1.20.0
+-rwxr-xr-x	root/root	usr/lib/libftdi.so.1.20.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libftdi.pc

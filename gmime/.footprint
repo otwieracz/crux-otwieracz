@@ -56,12 +56,9 @@ drwxr-xr-x	root/root	usr/include/gmime-2.6/gmime/
 -rw-r--r--	root/root	usr/include/gmime-2.6/gmime/gmime.h
 -rw-r--r--	root/root	usr/include/gmime-2.6/gmime/internet-address.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/girepository-1.0/
--rw-r--r--	root/root	usr/lib/girepository-1.0/GMime-2.6.typelib
--rw-r--r--	root/root	usr/lib/libgmime-2.6.a
 -rwxr-xr-x	root/root	usr/lib/libgmime-2.6.la
-lrwxrwxrwx	root/root	usr/lib/libgmime-2.6.so -> libgmime-2.6.so.0.623.0
-lrwxrwxrwx	root/root	usr/lib/libgmime-2.6.so.0 -> libgmime-2.6.so.0.623.0
--rwxr-xr-x	root/root	usr/lib/libgmime-2.6.so.0.623.0
+lrwxrwxrwx	root/root	usr/lib/libgmime-2.6.so -> libgmime-2.6.so.0.618.0
+lrwxrwxrwx	root/root	usr/lib/libgmime-2.6.so.0 -> libgmime-2.6.so.0.618.0
+-rwxr-xr-x	root/root	usr/lib/libgmime-2.6.so.0.618.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gmime-2.6.pc

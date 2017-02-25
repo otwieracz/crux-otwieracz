@@ -1,0 +1,5 @@
+isync <- httpup <- http://mikejsavage.co.uk/crux/
+gmime <- httpup <- http://www.mizrahi.com.ve/crux/pkgs/
+R <- httpup <- https://ports.maraku.xyz
+procmail <- rsync <- crux.guru::ports
+

@@ -1,0 +1,15 @@
+# Description: Cross-platform windowing and multimedia library for Python.
+# URL: https://bitbucket.org/pyglet/pyglet/wiki/Home
+# Maintainer: Slawomir Gonet, slawek at otwiera dot czy
+# Depends on: python python-setuptools
+
+name=python-pyglet
+version=1.2.4
+release=1
+source=(https://bitbucket.org/pyglet/pyglet/downloads/pyglet-$version.zip)
+
+build() {
+	cd pyglet-$version
+	python3 setup.py build
+	python3 setup.py install --prefix=/usr --root $PKG
+}

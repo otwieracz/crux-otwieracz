@@ -1,0 +1,18 @@
+# Description: 3D Printer host software (binary)
+# URL: https://www.repetier.com/
+# Maintainer: Slawomr Gonet, slawek at otwiera dot cz
+# Depends on: mono
+
+name=repetier-host
+version=1.6.2
+_version=1_6_2
+release=2
+source=(http://download.repetier.com/files/host/linux/repetierHostLinux_${_version}.tgz
+	repetier-host)
+
+build() {
+	mkdir -p $PKG/usr/lib/${name}
+	cp -rv RepetierHost/* $PKG/usr/lib/${name}
+	install -m 755 -D $SRC/repetier-host $PKG/usr/bin/repetier-host
+	rm $PKG/usr/lib/repetier-host/README.txt
+}

@@ -1,0 +1,16 @@
+# Description: Versatile mail delivery agent/filter
+# URL:         http://www.nongnu.org/avrdude/
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  libftdi ncurses
+
+name=avrdude
+version=6.3
+release=1
+source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=$PKG/usr
+    make
+    make install
+}

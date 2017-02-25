@@ -1,0 +1,15 @@
+# Description: SVG 1.1 to PNG, PDF, PS and SVG converter
+# URL: http://cairosvg.org/
+# Maintainer: Slawomir Gonet, slawek at otwiera dot czy
+# Depends on: python python-setuptools python-appdirs
+
+name=python-cairosvg
+version=1.0.22
+release=1
+source=(https://github.com/Kozea/CairoSVG/archive/$version.zip)
+
+build() {
+	cd CairoSVG-$version
+	python setup.py build
+	python setup.py install --prefix=/usr --root $PKG
+}

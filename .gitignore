@@ -1,6 +1,9 @@
 *.tgz
 *.tar.*
+*.*.partial
 *.zip
 *.rar
 *#*
 *~
+REMOTE.log
+*.swp
