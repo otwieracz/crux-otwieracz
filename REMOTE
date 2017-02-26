@@ -1,5 +1,6 @@
-isync <- httpup <- http://mikejsavage.co.uk/crux/
-gmime <- httpup <- http://www.mizrahi.com.ve/crux/pkgs/
-R <- httpup <- https://ports.maraku.xyz
-procmail <- rsync <- crux.guru::ports
-
+isync      <- httpup <- http://mikejsavage.co.uk/crux/
+gmime      <- httpup <- http://www.mizrahi.com.ve/crux/pkgs/
+R          <- httpup <- https://ports.maraku.xyz
+procmail   <- rsync  <- crux.guru::ports
+v4l-utils  <- httpup <- http://dl.z3bra.org/crux/v3.2/
+openscad   <- httpup <- http://crux.ster.zone/ports/joe9/

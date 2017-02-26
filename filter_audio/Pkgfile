@@ -1,0 +1,29 @@
+# Description:  An easy to use audio filtering library made from webrtc code.
+# URL:  https://github.com/irungentoo/filter_audio
+# Maintainer:  
+# Depends on:  
+
+name=filter_audio
+version=git-ada2f4f
+sversion=ada2f4fdc04940cdeee47caffe43add4fa017096
+release=2
+source=()
+
+gitsource=https://github.com/irungentoo/filter_audio
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
+}
+# vim: set ft=sh ts=4 et:

@@ -2,6 +2,7 @@
 
 REMOTEFILE="REMOTE"
 REMOTELOCKFILE="REMOTE.lock"
+REMOTELOCKFILETMP="REMOTE.lock.tmp"
 LOGFILE="REMOTE.log"
 
 # utilsa
@@ -45,9 +46,14 @@ fetch () {
 	remote=$(trim ${3})
 	[[ -n ${kind} ]] && [[ -n ${pkg} ]] && [[ -n ${remote} ]] && {
 		echo -n "=====> fetching remote ${pkg}... "
-		fetch_${kind} "${pkg}" "${remote}" && echo "${pkg} <- ${kind} <- ${remote}" >> "${REMOTELOCKFILE}" || echo -n "not found... "
+		[[ -d ${pkg} ]] && ! egrep -q "^${pkg}" ${REMOTELOCKFILETMP} && isremote="false" || isremote="true"
+		[[ ${isremote} == "true" ]] && {
+			fetch_${kind} "${pkg}" "${remote}" && echo "${pkg} <- ${kind} <- ${remote}" >> "${REMOTELOCKFILE}" || echo -n "not found... "
+		} || {
+			echo -n "local... "
+		}
 		deps=$(dependencies ${2})
-		[[ -n "${deps}" ]] && echo "depends on ${deps}" && (for dep in ${deps}; do fetch "${kind}" "${dep}" "${remote}"; done) || echo "done"
+		[[ -n "${deps}" ]] && echo "depends on ${deps}" && (for dep in ${deps}; do fetch "${kind}" "${dep}" "${remote}"; done) || echo "done."
 	}
 }
 
@@ -61,19 +67,20 @@ fetch_remote () {
 }
 
 echo "===> fetching remotes"
+cp -f ${REMOTELOCKFILE} ${REMOTELOCKFILETMP}
 echo "# Remote dependencies" > "${REMOTELOCKFILE}"
 while IFS= read -r cmd; do
 	fetch_remote "${cmd}"
 done < "${REMOTEFILE}"
 echo
 echo "===> done"
-
+rm ${REMOTELOCKFILETMP}
 
 echo "===> refreshing local"
 for pkgdir in */; do
 	pkg=$(trim $(basename ${pkgdir}))
 	echo -n "=====> refreshing ${pkg}... "
-	egrep -q "^${pkg}" "${REMOTELOCKFILE}" && echo "is remote" || ((cd "${pkgdir}"; pkgmk -d &>/dev/null && echo "$i ok... ") && (cd "${pkgdir}"; pkgmk -rs) && prtverify "${pkgdir}" || echo "${pkg} failed!")
+	egrep -q "^${pkg}" "${REMOTELOCKFILE}" && echo "is remote" || ((cd "${pkgdir}"; pkgmk -d &>/dev/null && echo -n "$i ok... ") && (cd "${pkgdir}"; pkgmk -rs) && prtverify "${pkgdir}" || echo "${pkg} failed!")
 done
 
 httpup-repgen

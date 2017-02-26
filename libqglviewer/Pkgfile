@@ -1,0 +1,19 @@
+# Description: 3D widget based on Qt 4's QGLWidget.
+# URL:         http://www.libqglviewer.com/
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  qt4
+
+name=libqglviewer
+version=2.6.4
+release=1
+source=(http://www.libqglviewer.com/src/libQGLViewer-$version.tar.gz)
+
+build () {
+   cd libQGLViewer-$version/QGLViewer
+
+   qmake PREFIX=/usr
+   make
+   make DESTDIR=$PKG INSTALL_ROOT=$PKG install
+
+   rm -rf $PKG/usr/share
+}

@@ -1,0 +1,31 @@
+# Description:  Tox is a free (as in liberty and price) peer to peer, distributed, multimedia messenger. (git version)
+# URL:  http://tox.im
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  autoconf libsodium libvpx opus
+
+name=toxcore
+version=git-d4ca294
+sversion=d4ca2941c5d203253493bbda03d46008d5a97e80
+release=1
+source=()
+
+gitsource=https://github.com/TokTok/c-toxcore
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	
+	if cd $name; then
+		git reset --hard
+		git pull $gitsource
+	else
+		git clone $gitsource $name
+		cd $name
+	fi
+	
+	git checkout $sversion
+	
+	autoreconf -i
+	
+	./configure --prefix=/usr
+	make DESTDIR=$PKG MANPREFIX=/usr/share/man install
+}

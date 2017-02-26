@@ -1,0 +1,22 @@
+# Description:  Userspace tools and conversion library for Video 4 Linux
+# URL:  http://linuxtv.org/
+# Maintainer:  z3bra, willy at mailoo dot org
+# Depends on:  qt4 libjpeg-turbo sysfsutils
+
+name=v4l-utils
+version=1.12.3
+release=2
+source=(http://linuxtv.org/downloads/$name/$name-$version.tar.bz2)
+
+build() {
+    cd "$name-$version"
+
+    ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANPREFIX=/usr/share/man\
+        install
+    rm "${PKG}/usr/bin/ivtv-ctl"
+}
+# vim: set ft=sh ts=4 et:

@@ -1,0 +1,20 @@
+# Description: C++ template library for linear algebra
+# URL:         http://eigen.tuxfamily.org/index.php?title=Main_Page
+# Maintainer:  Joe M, joe9mail at gmail dot com
+# Depends on:
+
+name=eigen2
+version=2.0.17
+release=1
+source=(http://bitbucket.org/eigen/eigen/get/$version.tar.bz2)
+
+build () {
+   cd eigen-eigen-b23437e61a07
+
+   mkdir build
+   cd    build
+   PKG_CONFIG_LIBDIR=/usr/lib cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+   make DESTDIR=$PKG install
+   # mkdir -p $PKG/usr/include/
+   # cp -rf Eigen $PKG/usr/include/
+}
