@@ -1,17 +1,37 @@
 # Description: Programmers Solid 3D CAD Modeller
 # URL:         http://www.openscad.org/
-# Maintainer:  Joe M, joe9mail at gmail dot com
-# Depends on:  qt4 cgal opencsg gmp mpfr boost cmake gcc bison flex eigen2
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  qt5 qscintilla-qt5 cgal opencsg gmp mpfr boost cmake gcc bison flex eigen2
 
 name=openscad
 version=2011.12
+version=git-14322d7
+sversion=14322d78b2be5148c2756d69e7a6c1e53b745569 
 release=1
-source=(https://github.com/downloads/$name/$name/$name-$version.src.tar.gz)
+source=()
+gitsource=https://github.com/${name}/${name}.git
 
 build () {
-   cd $name-$version
+    cd $PKGMK_SOURCE_DIR
 
-   qmake PREFIX=/usr
-   make
-   make DESTDIR=$PKG INSTALL_ROOT=$PKG install
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    qmake-qt5 PREFIX=/usr
+    make
+    make DESTDIR=$PKG INSTALL_ROOT=$PKG install
+
+    # Cleanup
+    find ${PKG} -iname "*copying*" -delete
+    find ${PKG} -iname "*authors*" -delete
+    find ${PKG} -iname "*changelog*" -delete
+    find ${PKG} -iname "*readme*" -delete
+    find ${PKG} -iname "*todo*" -delete
 }

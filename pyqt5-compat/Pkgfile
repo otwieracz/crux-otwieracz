@@ -1,0 +1,23 @@
+# Description: Python bindings for the Qt5 toolkit
+# URL: http://www.riverbankcomputing.co.uk/software/pyqt/intro
+# Maintainer: Daryl Fonseca-Holt, wyatt at prairieturtle dot ca
+# Packager: Daryl Fonseca-Holt, wyatt at prairieturtle dot ca
+# Depends on: sip qt5
+
+name=pyqt5-compat
+myname=PyQt5
+version=5.8.1
+release=1
+source=(http://sourceforge.net/projects/pyqt/files/${myname}/PyQt-${version}/${myname}_gpl-${version}.tar.gz)
+
+build() {
+    cd ${myname}_gpl-${version}
+
+    /usr/bin/python configure.py \
+        --confirm-license \
+        --qsci-api \
+        --qmake /usr/bin/qmake-qt5
+
+    make
+    make INSTALL_ROOT="${PKG}" install
+}

@@ -1,0 +1,27 @@
+# Description: Python bindings for the Qt toolkit
+# URL: http://www.riverbankcomputing.co.uk/software/pyqt/intro
+# Maintainer: Daryl Fonseca-Holt, wyatt at prairieturtle dot ca
+# Packager: Daryl Fonseca-Holt, wyatt at prairieturtle dot ca
+# Depends on: sip qt4
+
+name=pyqt-compat
+version=4.12
+release=1
+source=(http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-$version/PyQt4_gpl_x11-$version.tar.gz)
+
+build() {
+	cd PyQt4_gpl_x11-$version
+#	sed -i \
+#		-e "s=_find_exe('sip')=_find_exe('sip-compat')=" \
+#		configure-ng.py
+
+	/usr/bin/python configure.py \
+		--confirm-license \
+		--qsci-api 
+#		--sip=/usr/bin/sip \
+#		--sip-incdir=/usr/include/python2.7/sip
+	make
+	make DESTDIR=$PKG install
+#	sed -i -e 's/import sipconfig/import sip_compat.sipconfig as sipconfig/' \
+#		$PKG/usr/lib/python2.7/site-packages/PyQt4/pyqtconfig.py
+}

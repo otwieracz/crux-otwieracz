@@ -10,6 +10,6 @@ source=(https://bitbucket.org/pyglet/pyglet/downloads/pyglet-$version.zip)
 
 build() {
 	cd pyglet-$version
-	python3 setup.py build
-	python3 setup.py install --prefix=/usr --root $PKG
+	python setup.py build
+	python setup.py install --prefix=/usr --root $PKG
 }

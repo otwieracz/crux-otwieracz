@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDrjXxIn1zz4K16uMtAUuOkWtuTWXf0K+gnjQyM23V4PxZ5GlQRptyTt7qRV1GXpbs2oXbeNATgIbU7yyE1J+Twk=
+SHA256 (Pkgfile) = 0dffab4847e849d43b05ea75569bf70c1828aba829ef57f691c185f2ef3e75a2
+SHA256 (.footprint) = babe2f223888c4b7e4de9f85fd2e1df86039a830c531d8cfa50b5c57d285320c
+SHA256 (xapian-core-1.4.3.tar.xz) = 7d5295511ca2de70463a29e75f6a2393df5dc1485bf33074b778c66e1721e475

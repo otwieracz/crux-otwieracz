@@ -1218,7 +1218,6 @@ drwxr-xr-x	root/root	usr/include/CGAL/Mesh_2/
 -rw-r--r--	root/root	usr/include/CGAL/Mesh_2/Mesh_global_optimizer_2.h
 -rw-r--r--	root/root	usr/include/CGAL/Mesh_2/Mesh_sizing_field.h
 -rw-r--r--	root/root	usr/include/CGAL/Mesh_2/Output_stream.h
--rw-r--r--	root/root	usr/include/CGAL/Mesh_2/README
 -rw-r--r--	root/root	usr/include/CGAL/Mesh_2/Refine_edges.h
 -rw-r--r--	root/root	usr/include/CGAL/Mesh_2/Refine_edges_visitor.h
 -rw-r--r--	root/root	usr/include/CGAL/Mesh_2/Refine_edges_with_clusters.h

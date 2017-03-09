@@ -1,0 +1,29 @@
+# Description: useful when editing and debugging source code in Qt
+# URL: http://www.riverbankcomputing.com/
+# Maintainer: Slawomir Gonet, slawek at otwiera dot cz
+# Depends on: pyqt-compat
+
+name=qscintilla
+version=2.10
+release=1
+source=(https://sourceforge.net/projects/pyqt/files/QScintilla2/QScintilla-$version/QScintilla_gpl-$version.tar.gz)
+
+build() {
+	local qtlib
+	qtlib=$(pkg-config --variable=libdir QtCore)
+	local qtinc
+	qtinc=$(pkg-config --variable=includedir QtCore)
+	local qtrans
+	qtrans=$(pkg-config --variable=prefix QtCore)/translations
+	local qdata
+	qdata=$(pkg-config --variable=prefix QtCore)/qsci
+	cd QScintilla_gpl-$version
+	cd Qt4Qt5
+	qmake	QT_INSTALL_LIBS=$PKG/$qtlib \
+		QT_INSTALL_HEADERS=$PKG/$qtinc \
+		QT_INSTALL_TRANSLATIONS=$PKG/$qtrans \
+		QT_INSTALL_DATA=$PKG/$qdata \
+		qscintilla.pro
+	make
+	make INSTALL_ROOT=$PKG install
+}

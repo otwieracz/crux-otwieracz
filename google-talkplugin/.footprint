@@ -1,0 +1,260 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/google/
+drwxr-xr-x	root/root	opt/google/chrome-beta/
+drwxr-xr-x	root/root	opt/google/chrome-beta/pepper/
+lrwxrwxrwx	root/root	opt/google/chrome-beta/pepper/libppgoogletalk.so -> ../../../../opt/google/talkplugin/libppgoogletalk.so
+lrwxrwxrwx	root/root	opt/google/chrome-beta/pepper/libppo1d.so -> ../../../../opt/google/talkplugin/libppo1d.so
+drwxr-xr-x	root/root	opt/google/chrome-unstable/
+drwxr-xr-x	root/root	opt/google/chrome-unstable/pepper/
+lrwxrwxrwx	root/root	opt/google/chrome-unstable/pepper/libppgoogletalk.so -> ../../../../opt/google/talkplugin/libppgoogletalk.so
+lrwxrwxrwx	root/root	opt/google/chrome-unstable/pepper/libppo1d.so -> ../../../../opt/google/talkplugin/libppo1d.so
+drwxr-xr-x	root/root	opt/google/chrome/
+drwxr-xr-x	root/root	opt/google/chrome/pepper/
+lrwxrwxrwx	root/root	opt/google/chrome/pepper/libppgoogletalk.so -> ../../../../opt/google/talkplugin/libppgoogletalk.so
+lrwxrwxrwx	root/root	opt/google/chrome/pepper/libppo1d.so -> ../../../../opt/google/talkplugin/libppo1d.so
+drwxr-xr-x	root/root	opt/google/talkplugin/
+-rwxr-xr-x	root/root	opt/google/talkplugin/GoogleTalkPlugin
+-rw-r--r--	root/root	opt/google/talkplugin/attributions.txt
+drwxr-xr-x	root/root	opt/google/talkplugin/data/
+-rw-r--r--	root/root	opt/google/talkplugin/data/LMspeed_510.emd
+-rw-r--r--	root/root	opt/google/talkplugin/data/SFTprec_120.emd
+drwxr-xr-x	root/root	opt/google/talkplugin/lib/
+-rwxr-xr-x	root/root	opt/google/talkplugin/libgoogletalkremoting.so
+-rwxr-xr-x	root/root	opt/google/talkplugin/libnpgoogletalk.so
+-rwxr-xr-x	root/root	opt/google/talkplugin/libnpo1d.so
+-rwxr-xr-x	root/root	opt/google/talkplugin/libppgoogletalk.so
+-rwxr-xr-x	root/root	opt/google/talkplugin/libppo1d.so
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/af/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/af/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/af/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/am/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/am/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/am/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ar/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ar/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ar/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/bg/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/bg/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/bg/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/bn/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/bn/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/bn/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ca/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ca/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ca/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/cs/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/cs/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/cs/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/da/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/da/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/da/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/de/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/de/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/de/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/el/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/el/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/el/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/en-GB/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/en-GB/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/en-GB/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/en/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/en/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/en/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/es-419/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/es-419/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/es-419/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/es/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/es/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/es/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/et/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/et/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/et/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/eu/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/eu/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/eu/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fa/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fa/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/fa/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fi/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fi/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/fi/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fil/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fil/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/fil/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fr-CA/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fr-CA/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/fr-CA/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fr/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/fr/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/gl/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/gl/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/gl/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/gu/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/gu/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/gu/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/hi/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/hi/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/hi/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/hr/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/hr/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/hr/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/hu/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/hu/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/hu/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/id/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/id/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/id/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/is/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/is/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/is/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/it/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/it/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/it/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/iw/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/iw/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/iw/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ja/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ja/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ja/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/kn/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/kn/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/kn/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ko/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ko/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ko/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/lt/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/lt/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/lt/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/lv/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/lv/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/lv/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ml/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ml/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ml/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/mr/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/mr/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/mr/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ms/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ms/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ms/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/nl/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/nl/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/nl/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/no/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/no/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/no/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/or/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/or/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/or/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/pl/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/pl/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/pl/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/pt-BR/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/pt-BR/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/pt-BR/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/pt-PT/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/pt-PT/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/pt-PT/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ro/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ro/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ro/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ru/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ru/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ru/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sk/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sk/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/sk/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sl/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sl/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/sl/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sr/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sr/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/sr/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sv/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sv/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/sv/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sw/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/sw/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/sw/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ta/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ta/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ta/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/te/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/te/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/te/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/th/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/th/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/th/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/tl/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/tl/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/tl/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/tr/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/tr/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/tr/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/uk/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/uk/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/uk/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ur/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/ur/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/ur/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/vi/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/vi/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/vi/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/zh-CN/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/zh-CN/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/zh-CN/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/zh-HK/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/zh-HK/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/zh-HK/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/zh-TW/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/zh-TW/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/zh-TW/LC_MESSAGES/windowpicker.mo
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/zu/
+drwxr-xr-x	root/root	opt/google/talkplugin/locale/zu/LC_MESSAGES/
+-rw-r--r--	root/root	opt/google/talkplugin/locale/zu/LC_MESSAGES/windowpicker.mo
+-rw-r--r--	root/root	opt/google/talkplugin/remoting24x24.png
+-rw-r--r--	root/root	opt/google/talkplugin/windowpicker.glade
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/chromium-browser/
+drwxr-xr-x	root/root	usr/lib/chromium-browser/pepper/
+lrwxrwxrwx	root/root	usr/lib/chromium-browser/pepper/libppgoogletalk.so -> ../../../../opt/google/talkplugin/libppgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/chromium-browser/pepper/libppo1d.so -> ../../../../opt/google/talkplugin/libppo1d.so
+drwxr-xr-x	root/root	usr/lib/chromium-dev/
+drwxr-xr-x	root/root	usr/lib/chromium-dev/pepper/
+lrwxrwxrwx	root/root	usr/lib/chromium-dev/pepper/libppgoogletalk.so -> ../../../../opt/google/talkplugin/libppgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/chromium-dev/pepper/libppo1d.so -> ../../../../opt/google/talkplugin/libppo1d.so
+drwxr-xr-x	root/root	usr/lib/chromium/
+drwxr-xr-x	root/root	usr/lib/chromium/pepper/
+lrwxrwxrwx	root/root	usr/lib/chromium/pepper/libppgoogletalk.so -> ../../../../opt/google/talkplugin/libppgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/chromium/pepper/libppo1d.so -> ../../../../opt/google/talkplugin/libppo1d.so
+drwxr-xr-x	root/root	usr/lib/firefox/
+drwxr-xr-x	root/root	usr/lib/firefox/plugins/
+lrwxrwxrwx	root/root	usr/lib/firefox/plugins/libnpgoogletalk.so -> ../../../../opt/google/talkplugin/libnpgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/firefox/plugins/libnpo1d.so -> ../../../../opt/google/talkplugin/libnpo1d.so
+drwxr-xr-x	root/root	usr/lib/iceape/
+drwxr-xr-x	root/root	usr/lib/iceape/plugins/
+lrwxrwxrwx	root/root	usr/lib/iceape/plugins/libnpgoogletalk.so -> ../../../../opt/google/talkplugin/libnpgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/iceape/plugins/libnpo1d.so -> ../../../../opt/google/talkplugin/libnpo1d.so
+drwxr-xr-x	root/root	usr/lib/iceweasel/
+drwxr-xr-x	root/root	usr/lib/iceweasel/plugins/
+lrwxrwxrwx	root/root	usr/lib/iceweasel/plugins/libnpgoogletalk.so -> ../../../../opt/google/talkplugin/libnpgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/iceweasel/plugins/libnpo1d.so -> ../../../../opt/google/talkplugin/libnpo1d.so
+drwxr-xr-x	root/root	usr/lib/midbrowser/
+drwxr-xr-x	root/root	usr/lib/midbrowser/plugins/
+lrwxrwxrwx	root/root	usr/lib/midbrowser/plugins/libnpgoogletalk.so -> ../../../../opt/google/talkplugin/libnpgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/midbrowser/plugins/libnpo1d.so -> ../../../../opt/google/talkplugin/libnpo1d.so
+drwxr-xr-x	root/root	usr/lib/mozilla/
+drwxr-xr-x	root/root	usr/lib/mozilla/plugins/
+lrwxrwxrwx	root/root	usr/lib/mozilla/plugins/libnpgoogletalk.so -> ../../../../opt/google/talkplugin/libnpgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/mozilla/plugins/libnpo1d.so -> ../../../../opt/google/talkplugin/libnpo1d.so
+drwxr-xr-x	root/root	usr/lib/xulrunner-addons/
+drwxr-xr-x	root/root	usr/lib/xulrunner-addons/plugins/
+lrwxrwxrwx	root/root	usr/lib/xulrunner-addons/plugins/libnpgoogletalk.so -> ../../../../opt/google/talkplugin/libnpgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/xulrunner-addons/plugins/libnpo1d.so -> ../../../../opt/google/talkplugin/libnpo1d.so
+drwxr-xr-x	root/root	usr/lib/xulrunner/
+drwxr-xr-x	root/root	usr/lib/xulrunner/plugins/
+lrwxrwxrwx	root/root	usr/lib/xulrunner/plugins/libnpgoogletalk.so -> ../../../../opt/google/talkplugin/libnpgoogletalk.so
+lrwxrwxrwx	root/root	usr/lib/xulrunner/plugins/libnpo1d.so -> ../../../../opt/google/talkplugin/libnpo1d.so

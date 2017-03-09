@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDml4xQ1l7IuJCgEKOxAVfNkEESYAMscGrkoHP8A5rE1gT2LSI3Lc3pF9bcIWEPaZzuofLXuwVnlyk++UBx9BCAE=
+SHA256 (Pkgfile) = ddfffdaae5717f26537550e83bc516bc9eca870ea0d48a226de64efc78d7c915
+SHA256 (.footprint) = 37d673095fb6b5a4a5163ace16aa5194ac100a864f0340d3bded398344326439
+SHA256 (tls1.6.7-src.tar.gz) = 5119de3e5470359b97a8a00d861c9c48433571ee0167af0a952de66c99d3a3b8

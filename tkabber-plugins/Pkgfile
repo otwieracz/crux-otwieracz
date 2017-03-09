@@ -1,0 +1,20 @@
+# Description: Plugin pack for tkabber
+# URL:          http://tkabber.jabber.ru/
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  tkabber libotr
+
+name=tkabber-plugins
+version=1.1.2
+release=1
+source=(http://files.jabber.ru/tkabber/${name}-${version}.tar.xz)
+
+build() {
+    cd ${name}-${version}
+    make DESTDIR=${PKG} PREFIX=/usr install
+    rm -rf ${PKG}/usr/share/doc
+    find ${PKG} -iname "*changelog*" -delete
+    find ${PKG} -iname "*readme*" -delete
+    find ${PKG} -iname "*author*" -delete
+    find ${PKG} -iname "INSTALL" -delete
+    find ${PKG} -iname "TODO" -delete
+}

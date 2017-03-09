@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDl/U/NCm1w6Ai4jDU3wN6nP0TVDnNMwJsU3cxr8ao4+HUJ9b3sB0geTHkJlDLCXnFzL1kvb9+zPG4kUGnl0ceAM=
+SHA256 (Pkgfile) = b49cb89d67a8307ac0da69ec50ae81e7653df7db6217a67d4fa53537861a61ee
+SHA256 (.footprint) = 230ef8d8ed86a29d92af6b80f4244fe6253944e52172de0c76a3fd15cd2f7ef4
+SHA256 (avr8-gnu-toolchain-3.5.4.1709-linux.any.x86_64.tar.gz) = 04ad404ea628790ede27d4d78cc1ba19e8904c1826ec3b9aa79bcdb5f6c043b2

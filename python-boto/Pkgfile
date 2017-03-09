@@ -1,0 +1,17 @@
+# Description: Python S3 interface
+# URL: https://github.com/boto/boto
+# Maintainer: Slawomir Gonet, slawek at otwiera dot cz
+# Depends on: python python-setuptools
+
+name=python-boto
+_shortname=boto
+version=2.46.1
+release=1
+source=(https://pypi.python.org/packages/b1/f9/cf8fa9a4a48e651294fc88446edee96f8b965f1d3ca044befc5dd7c9449b/boto-2.46.1.tar.gz)
+
+build() {
+	cd $_shortname-$version
+	python setup.py build
+	python setup.py install --prefix=/usr --root $PKG
+	find $PKG -iname "*README*" -delete
+}

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDrfmICeNzegyBQ3MkWoIiuHe8akWB99pfyMK3VGMh6OpcPz3Sd7yJww+S/E/+2qRm31iwwosQ/c7lUOke6lQ8gs=
+SHA256 (Pkgfile) = 544b2fddf378ae15dfbc32b24cc8f6ddd7ac97299efee53fe74c1aac72e52c52
+SHA256 (.footprint) = 892c3e21601c90185d350f9f51a401c308ebe7550e784e6bf8614aaef24cca1e
+SHA256 (libotr-4.1.1.tar.gz) = 8b3b182424251067a952fb4e6c7b95a21e644fbb27fbd5f8af2b2ed87ca419f5

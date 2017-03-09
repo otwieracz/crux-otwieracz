@@ -1,0 +1,21 @@
+# Description: firefox plugin for Google hangouts
+# URL:         https://www.google.com/tools/dlpage/hangoutplugin
+# Maintainer:  Michael Savage, mike at mikejsavage dot co dot uk
+# Depends on:  firefox
+
+
+name=google-talkplugin
+version=5.41.0.0
+release=1
+source=(https://dl.google.com/linux/talkplugin/rpm/stable/x86_64/$name-$version-1.x86_64.rpm)
+
+build() {
+	cp -R $SRC/opt $PKG
+	install -d "$PKG/usr/lib"
+	cp -R $SRC/usr/lib*/* $PKG/usr/lib
+	# change /usr/lib/chromium-browser to /usr/lib/chromium
+	cp -R $PKG/usr/lib/chromium-browser $PKG/usr/lib/chromium
+	cp -R $PKG/usr/lib/chromium-browser $PKG/usr/lib/chromium-dev
+	# cleaning up cron update script
+	rm -rf $PKG/opt/google/talkplugin/cron
+}

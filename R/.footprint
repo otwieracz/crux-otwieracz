@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	usr/lib64/R/
 drwxr-xr-x	root/root	usr/lib64/R/bin/
 -rwxr-xr-x	root/root	usr/lib64/R/bin/BATCH
 -rwxr-xr-x	root/root	usr/lib64/R/bin/COMPILE
+-rwxr-xr-x	root/root	usr/lib64/R/bin/INSTALL
 -rwxr-xr-x	root/root	usr/lib64/R/bin/LINK
 -rwxr-xr-x	root/root	usr/lib64/R/bin/R
 -rwxr-xr-x	root/root	usr/lib64/R/bin/REMOVE
@@ -56,6 +57,13 @@ drwxr-xr-x	root/root	usr/lib64/R/doc/html/
 -rw-r--r--	root/root	usr/lib64/R/doc/html/right.jpg
 -rw-r--r--	root/root	usr/lib64/R/doc/html/up.jpg
 drwxr-xr-x	root/root	usr/lib64/R/doc/manual/
+-rw-r--r--	root/root	usr/lib64/R/doc/manual/R-FAQ.html
+-rw-r--r--	root/root	usr/lib64/R/doc/manual/R-admin.html
+-rw-r--r--	root/root	usr/lib64/R/doc/manual/R-data.html
+-rw-r--r--	root/root	usr/lib64/R/doc/manual/R-exts.html
+-rw-r--r--	root/root	usr/lib64/R/doc/manual/R-intro.html
+-rw-r--r--	root/root	usr/lib64/R/doc/manual/R-ints.html
+-rw-r--r--	root/root	usr/lib64/R/doc/manual/R-lang.html
 drwxr-xr-x	root/root	usr/lib64/R/doc/manual/images/
 -rw-r--r--	root/root	usr/lib64/R/doc/manual/images/QQ.png
 -rw-r--r--	root/root	usr/lib64/R/doc/manual/images/ecdf.png
@@ -1378,6 +1386,8 @@ drwxr-xr-x	root/root	usr/lib64/R/library/tcltk/Meta/
 -rw-r--r--	root/root	usr/lib64/R/library/tcltk/NAMESPACE
 drwxr-xr-x	root/root	usr/lib64/R/library/tcltk/R/
 -rw-r--r--	root/root	usr/lib64/R/library/tcltk/R/tcltk
+-rw-r--r--	root/root	usr/lib64/R/library/tcltk/R/tcltk.rdb
+-rw-r--r--	root/root	usr/lib64/R/library/tcltk/R/tcltk.rdx
 drwxr-xr-x	root/root	usr/lib64/R/library/tcltk/demo/
 -rw-r--r--	root/root	usr/lib64/R/library/tcltk/demo/tkcanvas.R
 -rw-r--r--	root/root	usr/lib64/R/library/tcltk/demo/tkdensity.R
@@ -1405,6 +1415,8 @@ drwxr-xr-x	root/root	usr/lib64/R/library/tcltk/help/
 drwxr-xr-x	root/root	usr/lib64/R/library/tcltk/html/
 -rw-r--r--	root/root	usr/lib64/R/library/tcltk/html/00Index.html
 -rw-r--r--	root/root	usr/lib64/R/library/tcltk/html/R.css
+drwxr-xr-x	root/root	usr/lib64/R/library/tcltk/libs/
+-rwxr-xr-x	root/root	usr/lib64/R/library/tcltk/libs/tcltk.so
 drwxr-xr-x	root/root	usr/lib64/R/library/tools/
 -rw-r--r--	root/root	usr/lib64/R/library/tools/DESCRIPTION
 -rw-r--r--	root/root	usr/lib64/R/library/tools/INDEX

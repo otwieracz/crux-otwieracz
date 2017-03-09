@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDsMY03iZ571MNkPoU8nSrIiBe2QjYla7taBUiFWhkZtZbe1yzGnnQ7KPu6X1UhVGzjkz+fDxY7qWh3iXmyeFHAY=
+SHA256 (Pkgfile) = c2fbcb266bb99b2f121daeb77b93fdcd050408e00f2a2ba95588c61a44914234
+SHA256 (.footprint) = d0e6372dca9159460fef7e0f3b332f54e8f4aee84d0248f78fa7c22f739a27bd
+SHA256 (v3.2.1.zip) = 35ebd0ad11e2524f5dd7f77fe36158f98532bf987c35d581e2cecb238abf4933

@@ -1,0 +1,23 @@
+# Description: automatically generating Python bindings for C and C++ libraries
+# URL:         http://www.riverbankcomputing.co.uk/software/pyqt/intro
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends:     python
+
+name=sip
+version=4.19.1
+release=1
+source=(http://sourceforge.net/projects/pyqt/files/$name/$name-$version/$name-$version.tar.gz)
+build() {
+    cd $name-$version
+    /usr/bin/python configure.py
+    make
+    make DESTDIR=$PKG install
+
+	if test -L /usr/bin/python3
+	then
+		/usr/bin/python3 configure.py
+		make clean
+    	make
+    	make DESTDIR=$PKG install
+	fi
+}

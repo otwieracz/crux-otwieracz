@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/gpg1.1/
+-rwxr-xr-x	root/root	usr/lib/gpg1.1/libgpg1.1.so
+-rw-r--r--	root/root	usr/lib/gpg1.1/pkgIndex.tcl
+-rw-r--r--	root/root	usr/lib/gpg1.1/tclgpg.tcl
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/mann/
+-rw-r--r--	root/root	usr/share/man/mann/gpg.n.gz

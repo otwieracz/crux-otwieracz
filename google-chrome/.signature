@@ -1,2 +1,6 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDvJf1zx65AXILT9P7i6ZzPKmepJR01B5KPa+FWIYk1QYczcVqtvrxgJ/bA57een9Vm+uKTIkQRZMHwEXf79fUAA=
+SHA256 (Pkgfile) = c0b2483bcc4565245300ab6dfd17650a19056280618bafe2a86a137f7ef7bfb9
+SHA256 (.footprint) = a63b033d3816ca1e1326ac2991f908df2f4ab794d15d9c23bc90afd9ecddbb9b
+SHA256 (google-chrome-stable_56.0.2924.87-1_amd64.deb) = 7c34adf8f613a0c8dee406535bb77afaa9cbe878639350fde1d4567967d5c4e8
+SHA256 (eula_text.html) = e93c01576427cad9099f2cf0df0be70d0a2cc0a3a66c743318b2138aa7c4ed93

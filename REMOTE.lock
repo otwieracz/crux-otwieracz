@@ -1,10 +1,8 @@
 # Remote dependencies
 isync <- httpup <- http://mikejsavage.co.uk/crux/
 gmime <- httpup <- http://www.mizrahi.com.ve/crux/pkgs/
-R <- httpup <- https://ports.maraku.xyz
-lapack <- httpup <- https://ports.maraku.xyz
 procmail <- rsync <- crux.guru::ports
-openscad <- httpup <- http://crux.ster.zone/ports/joe9/
+google-talkplugin <- httpup <- http://mikejsavage.co.uk/crux/
 rs <- httpup <- http://crux.ster.zone/ports/joe9/
 mpfi <- httpup <- http://crux.ster.zone/ports/joe9/
 eigen <- httpup <- http://crux.ster.zone/ports/joe9/

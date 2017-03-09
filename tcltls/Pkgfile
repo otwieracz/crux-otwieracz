@@ -1,0 +1,16 @@
+# Description:	OpenSSL Tcl Extensions
+# URL:	        http://tls.sourceforge.net/
+# Maintainer:   Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:	tcl tcllib openssl
+
+name=tcltls
+version=1.6.7
+release=1
+source=(http://downloads.sourceforge.net/project/tls/tls/${version}/tls${version}-src.tar.gz)
+
+build () {
+    cd tls${version}
+    ./configure
+    make
+    make DESTDIR=${PKG} install
+}

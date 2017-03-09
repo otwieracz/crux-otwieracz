@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDjI4HXf3SuBoqpPK7QetY2tkPyi5x5Dp0sftQlE0EywsbkWA3aSP70jNzRmr9oRD4J/iYxrJp5YpygPociOxBwM=
+SHA256 (Pkgfile) = 17eb282637da05f97526da794264b0071f5c73432f4e68335e0688f9e8c9245f
+SHA256 (.footprint) = 526ff45b18f2905f3a34ca350c1d42d50622959f4acf096897083fb79bc18357
+SHA256 (libsodium-1.0.8.tar.gz) = c0f191d2527852641e0a996b7b106d2e04cbc76ea50731b2d0babd3409301926

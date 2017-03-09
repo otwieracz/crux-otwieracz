@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDgMHdC25pj0liCqCCKUjOHzVDSlS74O5jBUyvEEgm0OkDwgtEj2SbgYcSc05eNxBFeRBMXh1OhLk1vRKnp0G/wo=
+SHA256 (Pkgfile) = 7cd4eb3735d4b440409eeec832a7d7a08b5fcd80b615ebd9b99dfb9629932e13
+SHA256 (.footprint) = 0d6e9293812d55f0ae7dd0d3f3fbe7037d9825a5faddfaba86495011417a3f65
+SHA256 (password-store-1.6.5.tar.xz) = 337a39767e6a8e69b2bcc549f27ff3915efacea57e5334c6068fcb72331d7315

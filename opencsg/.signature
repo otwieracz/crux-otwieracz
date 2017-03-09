@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDho4WqD5byIvhsswWJhhPnOpb0V3Lif4Zx3JREMbbmds5/9wjl8S6mcPU2r0TKAYR8INpyzaIyK+RnIi608sxww=
+SHA256 (Pkgfile) = b7e9088eb34530fa180a80436c5b75aac7e869bdab481f210fdcc905bb96c339
+SHA256 (.footprint) = f175ac69338d24ed1f4e1e7a9216f3f213e6adfd6de2aa065c0b707f73507afe
+SHA256 (OpenCSG-1.4.2.tar.gz) = d952ec5d3a2e46a30019c210963fcddff66813efc9c29603b72f9553adff4afb

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDpkh2FLLQOnQV8Fz+dtQSPiDunOjSTGqrabMhfdKG1J1zQz3PVvfOYj8GIHVR92PW2vg70SkcIBJtB8ZOZPr/wM=
+SHA256 (Pkgfile) = 810044f318685396aa46273e399aef27e802b207ba387f0f3122b6c32caed56c
+SHA256 (.footprint) = 13a10c8a08607e145eb5b9c3e0f4afe9110447328fff63457bc986fe8acc6a27
+SHA256 (tkabber-plugins-1.1.2.tar.xz) = 65f46cda1c23b0c7e0bd95c149988e259c13392feb910717d81143dcae39ab40

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDnBp73boXkmZCYG0iKTcPFwsYAD7aAy5jCJzCQzdsi+13fXhanlZ8UI17eLHJh4Yo7wXXCSUva+RSKgykgq+ZAQ=
+SHA256 (Pkgfile) = 67c42c3d73fbc32e669e68c24fa9a19baeb3ad09c75bc694d3e169b7363e0ce1
+SHA256 (.footprint) = a34858782fe052e72fb563059e463fa60912e3c5a1c56d66e03078b45652f54f
+SHA256 (boto-2.46.1.tar.gz) = d24a68d97276445d1b5baee6537bc565ab7070afcd449a72f2541b1da1328ed4

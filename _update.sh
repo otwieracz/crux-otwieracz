@@ -48,7 +48,11 @@ fetch () {
 		echo -n "=====> fetching remote ${pkg}... "
 		[[ -d ${pkg} ]] && ! egrep -q "^${pkg}" ${REMOTELOCKFILETMP} && isremote="false" || isremote="true"
 		[[ ${isremote} == "true" ]] && {
-			fetch_${kind} "${pkg}" "${remote}" && echo "${pkg} <- ${kind} <- ${remote}" >> "${REMOTELOCKFILE}" || echo -n "not found... "
+			fetch_${kind} "${pkg}" "${remote}" && {
+                echo "${pkg} <- ${kind} <- ${remote}" >> "${REMOTELOCKFILE}" 
+            } || {
+                echo -n "not found... "
+            }
 		} || {
 			echo -n "local... "
 		}
@@ -80,7 +84,7 @@ echo "===> refreshing local"
 for pkgdir in */; do
 	pkg=$(trim $(basename ${pkgdir}))
 	echo -n "=====> refreshing ${pkg}... "
-	egrep -q "^${pkg}" "${REMOTELOCKFILE}" && echo "is remote" || ((cd "${pkgdir}"; pkgmk -d &>/dev/null && echo -n "$i ok... ") && (cd "${pkgdir}"; pkgmk -rs) && prtverify "${pkgdir}" || echo "${pkg} failed!")
+	egrep -q "^${pkg}" "${REMOTELOCKFILE}" && echo "is remote" || ((cd "${pkgdir}"; /usr/local/bin/pkgmk -d &>/dev/null && echo -n "$i ok... ") && (cd "${pkgdir}"; /usr/local/bin/pkgmk -us) && prtverify -m clean-repo "${pkgdir}" || echo "${pkg} failed!")
 done
 
 httpup-repgen

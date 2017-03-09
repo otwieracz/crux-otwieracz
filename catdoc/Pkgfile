@@ -1,0 +1,19 @@
+# Description: Converter for Microsoft Word, Excel, PowerPoint and RTF files to text
+# URL:         http://www.wagner.pp.ru/~vitus/software/catdoc/ 
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  
+
+name=catdoc
+version=0.95
+release=1
+source=(http://ftp.wagner.pp.ru/pub/$name/$name-$version.tar.gz)
+
+build () {
+   cd $name-$version
+
+   ./configure --prefix=/usr --with-install-root=$PKG
+   make
+   make install
+   find $PKG -iname "*readme*" -delete
+   find $PKG -iname "*todo*" -delete
+}

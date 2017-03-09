@@ -1,2 +1,7 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDu53/jwZm14pmb1Tz5HU6kYeqFNUKkk8JcXUCe7mJfVBzs5N0DTZkDxWwDPtr5LF/U+h9C6Zo+DdvNY1H3MPRQA=
+SHA256 (Pkgfile) = 4bb60d2adb8631c830f960c5d5f17fcd47c68e8935ac76c620f240fceae7aef2
+SHA256 (.footprint) = 7c3612f727a9aa515b271c1457e1ef8cebc407f1025d3370fc994ca7586f1fd5
+SHA256 (myxrandr2) = 9fdff812998dead67df9129405a11afac981d89df75cc759cbcf87a4be0b9997
+SHA256 (myxrandr2d) = ad2288199458952f68566d0c3e037bcd87ea837615bd1ebe1f05524e283802b0
+SHA256 (90-myxrandr2d.rules) = eacd3b118a8f87959a0013bde56ee623857f0b5fe9d4677e8ba4c20e7610d1f9

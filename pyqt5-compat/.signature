@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDsmGd1nMzk+v9UZ9ioZVzuoT1hJ3fsgAqZphZTXqB4gHE/EwhLm7X/ZopF3te5srH6c/koCSki0o9lIUOZLRMQQ=
+SHA256 (Pkgfile) = 361b209f2423194dde20dad4491b489ea2237d04bd83a47ee1ed41b8d0bdf21a
+SHA256 (.footprint) = 24bc338014ea7a444a3a84f59646b4c9cc18f4985f340d51bc254dcffb55e905
+SHA256 (PyQt5_gpl-5.8.1.tar.gz) = 1e8f24b261f34fa5bad19b5a637aadba2fa9a62e440749117b229253e8992a2e

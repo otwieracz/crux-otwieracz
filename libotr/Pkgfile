@@ -1,0 +1,17 @@
+# Description: portable OTR Messaging Library
+# URL:         http://www.cypherpunks.ca/otr
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:
+
+name=libotr
+version=4.1.1
+release=1
+source=(http://www.cypherpunks.ca/otr/$name-$version.tar.gz)
+
+build() {
+   cd $name-$version
+
+   ./configure --prefix=/usr --mandir=/usr/share/man
+   make
+   make DESTDIR=$PKG install
+}

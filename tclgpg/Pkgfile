@@ -1,0 +1,31 @@
+# Description: A lightweight Tox client (git version)
+# URL:         https://chiselapp.com/user/sgolovan/repository/tclgpg/home
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  tcl gpgme tcllib fossil autoreconf make
+
+name=tclgpg
+version=fossil-ffd35a
+sversion=ffd35a07693f3216ba0b398cca9c7497a288c7aa
+release=1
+source=()
+
+fossilsource=https://chiselapp.com/user/sgolovan/repository/${name}
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name &> /dev/null; then
+        fossil checkout ${sversion}
+    else
+        fossil clone ${fossilsource} ${name}.fossil
+        mkdir -p ${name}
+        cd ${name}
+        fossil open ../${name}.fossil ${sversion}
+    fi
+
+    autoreconf
+    ./configure
+    make
+    make DESTDIR=$PKG MANPREFIX=/usr/share/man install
+}
+# vim: set ft=sh ts=4 et:

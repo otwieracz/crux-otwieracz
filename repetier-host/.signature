@@ -1,2 +1,6 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDkcv4x+XVi6WkVQV4b1elCFbyV6AzCjBrQb0hy/pFwt0HOUW9qDgW24dUe4y/CnzacMJLB2FxIjRikRSNdeZ3g4=
+SHA256 (Pkgfile) = c685adba8e943f96df167c746a90a0f307f644ea981b5477648299f0a0a03793
+SHA256 (.footprint) = a04b5c4e5b5c7f9a7bea7960cfc29cd2c8e0a47d3728e21c182eab802df0291d
+SHA256 (repetierHostLinux_1_6_2.tgz) = a9b30159967be4c6db61fe3a7d6b4e8c2432d3cb54ccb2bf312c5f791437fbbb
+SHA256 (repetier-host) = 887be2ba7e8c583dcfe5980cdd16f86933d72bccaf34ca611e4eb23c411d3ca2

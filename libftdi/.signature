@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDrE5O4KvkccSV87b9l8utEE2ccVxe2M9uLs/h5ywv5FNzP0l8fk0BZO8f4XfqW+pyybL6y7cYZiG46oqWtwTGQs=
+SHA256 (Pkgfile) = 050b348df965f64e1bd8af6a4cdb70aad4d515ea32e6bc5f8a4cdb5b5dfffc8c
+SHA256 (.footprint) = 4abefa974373c3c1b66ce5f5e7b755d52944ee8b969b8996919aacddd4cde23d
+SHA256 (libftdi-0.20.tar.gz) = 3176d5b5986438f33f5208e690a8bfe90941be501cc0a72118ce3d338d4b838e

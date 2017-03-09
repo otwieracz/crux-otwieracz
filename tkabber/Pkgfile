@@ -1,0 +1,22 @@
+# Description: Free and Open Source client for the Jabber instant messaging system.
+# URL: http://tkabber.jabber.ru/
+# Maintainer: Slawomir Gonet, slawek at otwiera dot cz
+# Depends on: tcl tk bwidget tcllib tcltls gpgme tclgpg
+
+name=tkabber
+version=1.1.2
+release=1
+source=(http://files.jabber.ru/${name}/${name}-${version}.tar.xz)
+
+build() {
+    cd ${name}-${version}
+
+    make DESTDIR=$PKG PREFIX=/usr install
+    rm -rf ${PKG}/usr/share/doc
+    find ${PKG} -iname "*changelog*" -delete
+    find ${PKG} -iname "*readme*" -delete
+    find ${PKG} -iname "*author*" -delete
+    find ${PKG} -iname "INSTALL" -delete
+    find ${PKG} -iname "TODO" -delete
+
+}

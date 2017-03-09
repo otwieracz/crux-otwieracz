@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDsMUUkx6P94IzGKJiUGXnU7bMsOn9BG/mQyEDSDZ3UN4qT+Wi3+fQQxzSUJBxtDm4opVPMD/rtjVw6LOttrW0wU=
+RWTCNulfM3miDoDxkS6SzOE4pMcPKNFZNYxD53l1r/SDNyBlr7fyLDQiqRnojmrmGSSmdj70cHNIE9lFHpTYTgmCPBQc+WOV/Qo=
+SHA256 (Pkgfile) = 960756936263d60f519a68e415a87824ff5674f7e2b4d9af63cd9bf59baa6923
+SHA256 (.footprint) = 150b8105dde48ad004f681eceb32422df467afbdd19fea7881973377efc8f597
+SHA256 (pyglet-1.2.4.zip) = 269834aaf911b4f8825657d12ae1a8bff27d9dccb3e54a8a144efcec7879a6e4

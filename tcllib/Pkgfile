@@ -1,0 +1,16 @@
+# Description:	Tcl Standard Library
+# URL:	        http://tcllib.sourceforge.net
+# Maintainer:   Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:	tcl
+
+name=tcllib
+version=1.18
+myversion=1_18
+release=1
+source=(https://github.com/tcltk/${name}/archive/${name}_${myversion}.tar.gz)
+
+build () {
+    cd ${name}-${name}_${myversion}
+    ./configure --prefix=/usr
+    make DESTDIR=${PKG} install
+}

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDnRE3bREKHeKqp5BgnlLq9E7qYg1AzApAplkzK9t0lHxMbDelvn8uf+Eg0GQqdpX/uFsEdcvjYt9pc7mvcqLvQk=
+SHA256 (Pkgfile) = 376cbcdd8a91219751051eae84203ca138d7243bee9bd9e44bf545a4b2eccd6c
+SHA256 (.footprint) = 49f1597f1934ea975af473e909c486ef3b572d163fbb6de8585ffeab01749781
+SHA256 (sip-4.19.1.tar.gz) = 501852b8325349031b769d1c03d6eab04f7b9b97f790ec79f3d3d04bf065d83e

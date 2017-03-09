@@ -1,0 +1,22 @@
+# Description:  High-level widget set for Tcl/Tk using native Tcl 8.x namespaces.
+# URL:          http://tcllib.sourceforge.net
+# Maintainer:   Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:   tcl tcllib
+
+name=bwidget
+version=1.9.10
+release=1
+source=(http://downloads.sourceforge.net/project/tcllib/BWidget/$version/$name-$version.tar.gz)
+
+build () {
+    source /usr/lib/tclConfig.sh
+    mkdir -p ${PKG}/usr/lib/tcl${TCL_VERSION}
+    mv ${name}-${version} ${PKG}/usr/lib/tcl${TCL_VERSION}
+    rm -rf ${PKG}/usr/share/doc
+    find ${PKG} -iname "*changelog*" -delete
+    find ${PKG} -iname "*readme*" -delete
+    find ${PKG} -iname "*author*" -delete
+    find ${PKG} -iname "INSTALL" -delete
+    find ${PKG} -iname "TODO" -delete
+
+}
