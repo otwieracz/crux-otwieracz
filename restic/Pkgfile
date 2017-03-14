@@ -1,0 +1,16 @@
+# Description:  restic is a program that does backups right
+# URL:          https://restic.github.io/
+# Maintainer:   Slawomir Gonet, slawek at otwiera dot cz
+# Dependencies: go
+
+name=restic
+version=0.5.0
+release=1
+source=(https://github.com/${name}/${name}/archive/v${version}.tar.gz)
+
+build() {
+    cd $name-$version
+    go run build.go
+
+    install -m 0755 -D restic $PKG/usr/bin/restic
+}

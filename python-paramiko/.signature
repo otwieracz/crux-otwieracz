@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/otwieracz.pub
-RWTCNulfM3miDmPMp/i998ULXsfvAP+ZJA7vxekj4pqZA+49ca0RlbWSoSW5rIhZzX42/OHvFrf99lg9Lqm41J2NfQtdwKHwJQQ=
-SHA256 (Pkgfile) = 38063949957795c7bc950fcea5480065717d5a1d3b34214fa9f573599e4f7a2b
-SHA256 (.footprint) = ead67a8b40e064066ead816b5fa411cc5aadc362efbbd05745c5af0132aefc09
-SHA256 (paramiko-2.1.2.tar.gz) = 5fae49bed35e2e3d45c4f7b0db2d38b9ca626312d91119b3991d0ecf8125e310

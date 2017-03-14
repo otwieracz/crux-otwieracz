@@ -4,7 +4,7 @@
 # Depends on:  tcl gpgme tcllib fossil autoreconf make
 
 name=tclgpg
-version=fossil-ffd35a
+version=2016-06-15.fossil-ffd35a
 sversion=ffd35a07693f3216ba0b398cca9c7497a288c7aa
 release=1
 source=()

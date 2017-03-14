@@ -1,0 +1,38 @@
+# Description: Contrib plugin pack for tkabber
+# URL:         http://tkabber.jabber.ru/
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  tkabber
+
+name=tkabber-contrib
+version=2016-06-29.fossil-7e0bf9
+sversion=7e0bf9ef1f8996d3660f2e3794df74684d71b816 
+release=1
+source=()
+fossilsource=https://chiselapp.com/user/sgolovan/repository/${name}
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name &> /dev/null; then
+        fossil checkout ${sversion}
+    else
+        fossil clone ${fossilsource} ${name}.fossil
+        mkdir -p ${name}
+        cd ${name}
+        fossil open ../${name}.fossil ${sversion}
+    fi
+
+    destdir=${PKG}/usr/share/tkabber-contrib
+    mkdir -p ${destdir}
+    cp -rv * ${destdir}
+
+    rm -rf ${PKG}/usr/share/doc
+    find ${PKG} -iname "*changelog*" -delete
+    find ${PKG} -iname "*readme*" -delete
+    find ${PKG} -iname "*author*" -delete
+    find ${PKG} -iname "*INSTALL*" -delete
+    find ${PKG} -iname "*TODO*" -delete
+    find ${PKG} -iname "*BUGS*" -delete
+    find ${PKG} -iname "*THANKS*" -delete
+    find ${PKG} -iname "*COPYING*" -delete
+}

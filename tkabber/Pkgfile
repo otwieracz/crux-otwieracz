@@ -1,17 +1,43 @@
-# Description: Free and Open Source client for the Jabber instant messaging system.
+# Description: Free and Open Source client for the Jabber instant messaging system, with tclxmpp bundled
 # URL: http://tkabber.jabber.ru/
 # Maintainer: Slawomir Gonet, slawek at otwiera dot cz
 # Depends on: tcl tk bwidget tcllib tcltls gpgme tclgpg
 
 name=tkabber
-version=1.1.2
+version=2016-08-18.fossil-93d030+b6a6c2
 release=1
-source=(http://files.jabber.ru/${name}/${name}-${version}.tar.xz)
+source=()
+
+tkabber_name=tkabber
+tclxmpp_name=tclxmpp
+tkabber_source=https://chiselapp.com/user/sgolovan/repository/${tkabber_name}
+tclxmpp_source=https://chiselapp.com/user/sgolovan/repository/${tclxmpp_name}
+tkabber_version=93d0303aad76a71ac10ca0d0e3286e81e3c4fe2e
+tclxmpp_version=b6a6c2174d654f058729a95b3e0a83ebcb961627
 
 build() {
-    cd ${name}-${version}
+    cd $PKGMK_SOURCE_DIR
 
-    make DESTDIR=$PKG PREFIX=/usr install
+    if test -f ${tkabber_name}/.fslckout && test -f ${tkabber_name}/${tclxmpp_name}/.fslckout; then
+        cd ${tkabber_name}
+        fossil checkout ${tkabber_version}
+        cd ${tclxmpp_name}
+        fossil checkout ${tclxmpp_version}
+    else
+        rm -rf ${tkabber_name}/
+        rm -f ${tkabber_name}.fossil ${tclxmpp_name}.fossil
+        fossil clone ${tkabber_source} ${tkabber_name}.fossil
+        fossil clone ${tclxmpp_source} ${tclxmpp_name}.fossil
+        mkdir -p ${tkabber_name}
+        cd ${tkabber_name}
+        fossil open ../${tkabber_name}.fossil ${tkabber_version}
+        mkdir -p ${tclxmpp_name}
+        cd ${tclxmpp_name}
+        fossil open ../../${tclxmpp_name}.fossil ${tclxmpp_version} --nested
+    fi
+    cd ..
+
+    make DESTDIR=$PKG PREFIX=/usr install-bin
     rm -rf ${PKG}/usr/share/doc
     find ${PKG} -iname "*changelog*" -delete
     find ${PKG} -iname "*readme*" -delete

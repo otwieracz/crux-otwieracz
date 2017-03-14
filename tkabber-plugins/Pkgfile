@@ -4,14 +4,27 @@
 # Depends on:  tkabber libotr
 
 name=tkabber-plugins
-version=1.1.2
+version=2016-10-11.fossil-b965b7
+sversion=b965b70d398a46345d5b62badc6d80ec1c553677
 release=1
-source=(http://files.jabber.ru/tkabber/${name}-${version}.tar.xz)
+source=()
+fossilsource=https://chiselapp.com/user/sgolovan/repository/${name}
 
 build() {
-    cd ${name}-${version}
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name &> /dev/null; then
+        fossil checkout ${sversion}
+    else
+        fossil clone ${fossilsource} ${name}.fossil
+        mkdir -p ${name}
+        cd ${name}
+        fossil open ../${name}.fossil ${sversion}
+    fi
+
     make DESTDIR=${PKG} PREFIX=/usr install
     rm -rf ${PKG}/usr/share/doc
+
     find ${PKG} -iname "*changelog*" -delete
     find ${PKG} -iname "*readme*" -delete
     find ${PKG} -iname "*author*" -delete
