@@ -4,3 +4,4 @@ procmail          <- rsync  <- crux.guru::ports
 google-talkplugin <- httpup <- http://mikejsavage.co.uk/crux/
 cgal              <- httpup <- http://crux.ster.zone/ports/joe9/
 eigen2            <- httpup <- http://crux.ster.zone/ports/joe9/
+gtk-sharp         <- httpup <- https://raw.github.com/justinbloomfield/crux-ports/master/
