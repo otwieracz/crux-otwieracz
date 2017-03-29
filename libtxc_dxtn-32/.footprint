@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/lib32/
+-rwxr-xr-x	root/root	usr/lib32/libtxc_dxtn.la
+-rwxr-xr-x	root/root	usr/lib32/libtxc_dxtn.so

@@ -1,0 +1,18 @@
+# Description: S3 Texture Compression (S3TC) library for Mesa
+# URL:         http://dri.freedesktop.org/wiki/S3TC
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  glibc mesa3d
+
+name=libtxc_dxtn
+_name=libtxc_dxtn
+version=1.0.1
+release=1
+source=(http://people.freedesktop.org/~cbrill/${_name}/${_name}-${version}.tar.bz2)
+
+build()
+{
+    cd ${_name}-${version}
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=${PKG} install
+}

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/alan.pub
+RWSHHtGdlW9unKR5jSHF4OCes1N4A07NWqPjeXqU7JK/E82kRkNm4Acqsz3gX9uhkqRTYpvI0jLtUAQEahOgygkZtjTYMS8cCQ4=
+SHA256 (Pkgfile) = 700485a217e661e29a3cb1bbdb99a8a293aea1cb8d6bf21468b438e49b213abd
+SHA256 (.footprint) = 89fef9e0189bfef554d8c003ded89e5657e142819cf3b4a39d82222ceae7405e
+SHA256 (gmime-2.6.18.tar.xz) = 783fc14190459c568a31c2fd6dba1e8afa0431e2931aa46f652aa486ad881ae6

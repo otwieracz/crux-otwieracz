@@ -5,7 +5,7 @@
 
 name=sbcl
 version=1.3.14
-release=1
+release=2
 source=(http://prdownloads.sourceforge.net/sbcl/sbcl-$version-x86-64-linux-binary.tar.bz2)
 
 build ()
@@ -14,7 +14,7 @@ build ()
     mkdir $PKG/usr
     SBCL_HOME=$PKG/usr/lib/sbcl INSTALL_ROOT=$PKG/usr sh install.sh
     mv $PKG/usr/bin/sbcl $PKG/usr/lib/sbcl/sbcl.bin
-    echo -e "#!/bin/sh\n\nSBCL_HOME=/usr/lib/sbcl /usr/lib/sbcl/sbcl.bin $@" > $PKG/usr/bin/sbcl
+    echo -e "#!/bin/sh\n\nSBCL_HOME=/usr/lib/sbcl /usr/lib/sbcl/sbcl.bin \$@" > $PKG/usr/bin/sbcl
     rm -rf $PKG/usr/share/doc
     rm -rf $PKG/usr/share/info
     chmod +x $PKG/usr/bin/sbcl

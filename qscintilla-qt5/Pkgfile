@@ -1,7 +1,7 @@
 # Description: useful when editing and debugging source code in Qt
 # URL: http://www.riverbankcomputing.com/
 # Maintainer: Slawomir Gonet, slawek at otwiera dot cz
-# Depends on: pyqt-compat qt5
+# Depends on: pyqt5-compat qt5
 
 name=qscintilla-qt5
 version=2.10

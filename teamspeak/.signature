@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDqTdvo6zlZgulVlhO1oxr34/iUmBjk08PW9ZQzYAA2XEvHP321GEo8JH2bgbtfqjSiPLunEnnScrHnu9mRPiFws=
+SHA256 (Pkgfile) = 40b7c848f3c943c673f49da70889d31e21687e5acd2fbbd775ffb45b576e1748
+SHA256 (.footprint) = 393577120576ae9911280041dd1d078983c55694837fc82a58a2739532c85a5e
+SHA256 (TeamSpeak3-Client-linux_amd64-3.0.14.run) = 29f553d2783b900d3f78a3aa1f40d4c13816b1973badc90fe573b53b0ec5249a
+SHA256 (teamspeak3.desktop) = 4d3da518532aa6742da11af0c6ac10654531dcff3fc421842c129297bf2688bd
+SHA256 (icon.xpm) = 3f4b3549e3530ff151d6acc89e9e5f595c26f3e99ef8e1bf61fc50d45fef102b
+SHA256 (teamspeak3.launcher) = 233ba63e4008ce7ba03205cfeb96e4d2f3e8cf856d02864f5b70aef4f36053e9

@@ -4,7 +4,6 @@
 # Depends on:  qt5 qscintilla-qt5 cgal opencsg gmp mpfr boost cmake gcc bison flex eigen2
 
 name=openscad
-version=2011.12
 version=git-14322d7
 sversion=14322d78b2be5148c2756d69e7a6c1e53b745569 
 release=1

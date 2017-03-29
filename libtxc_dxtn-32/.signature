@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDuMxpjMaFW6crwK7NRYpULI6U2K2v7vqgyu1F6Bp16OcX9iU3JTmQlXXPrji50GjQsNY2lyKH1MrduXt2Fj/EA4=
+SHA256 (Pkgfile) = ca2e7df528eba52941483c95d5584de3df36f3f8a84e63b28a19691b633f934e
+SHA256 (.footprint) = 558b2000276666296e2566f96cb040dfaac2bbab7704a94a36b95b3b19fc1b10
+SHA256 (libtxc_dxtn-1.0.1.tar.bz2) = 45290d12cdca529a3f41e7fc35c4250fc1b6d2fc16b56680f8401f6aa792ae60
