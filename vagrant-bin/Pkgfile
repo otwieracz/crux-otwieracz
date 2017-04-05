@@ -1,0 +1,21 @@
+# Description: Tool for building and distributing virtual machines
+# URL:         http://vagrantup.com/
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  
+
+name=vagrant-bin
+version=1.9.3
+release=1
+source=(https://releases.hashicorp.com/vagrant/${version}/vagrant_${version}_x86_64.deb)
+
+build() {
+    bsdtar -xf vagrant_${version}_x86_64.deb
+    bsdtar -xf data.tar.gz -C "${PKG}/" 
+    
+    sed -i 's/cached: true/cached: false/g' ${PKG}/opt/vagrant/embedded/gems/gems/vagrant-${version}/plugins/provisioners/chef/provisioner/chef_solo.rb
+
+	find ${PKG} -name COPYING* -delete
+	find ${PKG} -name TODO* -delete
+	find ${PKG} -name README* -delete
+}
+
