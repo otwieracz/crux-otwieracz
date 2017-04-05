@@ -1,0 +1,24 @@
+# Description: The Racket Programming Language
+# URL:         http://racket-lang.org/
+# Maintainer:  Slawomir Gonet, slawek at otwiera dot cz
+# Depends on:  gtk
+
+name=racket
+version=6.8
+release=1
+source=(http://mirror.racket-lang.org/installers/$version/$name-$version-src-builtpkgs.tgz)
+
+build() {
+	cd $name-$version/src
+
+	mkdir build
+	cd build
+	../configure --prefix=/usr --libexecdir=/usr/lib/$name --disable-nls --enable-shared
+	make
+	make DESTDIR=$PKG install
+
+	find $PKG -name COPYING* -delete
+	find $PKG -name TODO* -delete
+	find $PKG -name README* -delete
+}
+

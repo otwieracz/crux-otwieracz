@@ -105,7 +105,7 @@ drwxr-xr-x	root/root	usr/lib/repetier-host/plugins/
 -rw-r--r--	root/root	usr/lib/repetier-host/plugins/.DS_Store
 drwxr-xr-x	root/root	usr/lib/repetier-host/plugins/CuraEngine/
 -rw-r--r--	root/root	usr/lib/repetier-host/plugins/CuraEngine/.DS_Store
--rwxr-xr-x	root/root	usr/lib/repetier-host/plugins/CuraEngine/CuraEngine
+lrwxrwxrwx	root/root	usr/lib/repetier-host/plugins/CuraEngine/CuraEngine -> /usr/lib/repetier-host/plugins/CuraEngine/CuraEngine64
 -rw-r--r--	root/root	usr/lib/repetier-host/plugins/CuraEngine/CuraEngine.dll
 -rwxr-xr-x	root/root	usr/lib/repetier-host/plugins/CuraEngine/CuraEngine32
 -rwxr-xr-x	root/root	usr/lib/repetier-host/plugins/CuraEngine/CuraEngine64

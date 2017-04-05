@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/otwieracz.pub
+RWTCNulfM3miDhem/7UW0KnzFKFscR9DfUTwfg6XrEtr9quwjlh/vvS9tY8LAu6sddBMxQuXb+RwqPLpnhDr8FAVyZWPFFpdlQc=
+SHA256 (Pkgfile) = 0db4ed871bfa2ff8a2d82c9493b75caa9e3bff9058eb2a277b802ea77044c134
+SHA256 (.footprint) = 261f4dfacad4bf46b3a724b42c760069078beaabea131eae4d2edfd079b04336
+SHA256 (racket-6.8-src-builtpkgs.tgz) = 76b19b0b76c953ebd3314092b107b4b15d1fe8052c6d1f8e5098c163acbde3e6

@@ -6,13 +6,19 @@
 name=repetier-host
 version=1.6.2
 _version=1_6_2
-release=2
+release=3
 source=(http://download.repetier.com/files/host/linux/repetierHostLinux_${_version}.tgz
 	repetier-host)
 
 build() {
-	mkdir -p $PKG/usr/lib/${name}
-	cp -rv RepetierHost/* $PKG/usr/lib/${name}
-	install -m 755 -D $SRC/repetier-host $PKG/usr/bin/repetier-host
-	rm $PKG/usr/lib/repetier-host/README.txt
+	mkdir -p "${PKG}/usr/lib/${name}"
+	cp -rv RepetierHost/* "$PKG/usr/lib/${name}"
+	install -m 755 -D "${SRC}/repetier-host" "${PKG}/usr/bin/repetier-host"
+
+
+    # Fix https://forum.repetier.com/discussion/2076/preview-placement-after-slice-at-0-0
+    rm -rf "${PKG}/usr/lib/repetier-host/plugins/CuraEngine/CuraEngine"
+    ln -s "/usr/lib/repetier-host/plugins/CuraEngine/CuraEngine64" "${PKG}/usr/lib/repetier-host/plugins/CuraEngine/CuraEngine"
+
+	rm "${PKG}/usr/lib/repetier-host/README.txt"
 }
